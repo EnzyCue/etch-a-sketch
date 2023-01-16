@@ -3,7 +3,6 @@ body {
     font-family: sans-serif;
     padding: 0;
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
 }
@@ -25,10 +24,6 @@ button {
 }
 
 .container {
-    display: flex;
-    flex: initial;
-    justify-content: center;
-    align-items: center;
     padding: 0;
     width: 100vw;
     max-height: 800px;
@@ -41,9 +36,6 @@ button {
 .row {
     display: flex;
     justify-content: center;
-    align-items: center;
-    flex: initial;
-    flex-grow: 0;
     width: 100vw;
 }
 
@@ -53,4 +45,5 @@ button {
     border-bottom-width: 0.5px;
     margin: 0;
     box-sizing: border-box;
+    /* need border-box to account for the borders around each box! */
 }
