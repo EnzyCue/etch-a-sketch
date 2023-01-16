@@ -13,7 +13,7 @@ button {
     border: 3px solid rgb(94, 86, 86);
     border-radius: 8px;
     width: 100px;
-    font-weight: bold;
+    font-weight: bold; 
     height: 30px;
     flex: initial;
     margin-top: 50px;
@@ -26,21 +26,24 @@ button {
 
 .container {
     display: flex;
-    flex: 1;
+    flex: initial;
     justify-content: center;
     align-items: center;
     padding: 0;
     width: 100vw;
+    max-height: 800px;
     flex-direction: column; 
     margin-bottom: auto;
     margin-top: 100px;
+    flex-grow: 0;
 }
 
 .row {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex: 1;
+    flex: initial;
+    flex-grow: 0;
     width: 100vw;
 }
 
@@ -49,6 +52,5 @@ button {
     border-top-width: 0.5px;
     border-bottom-width: 0.5px;
     margin: 0;
-    flex: 1;
-    height: 50px;
+    box-sizing: border-box;
 }
